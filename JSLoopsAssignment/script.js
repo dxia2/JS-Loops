@@ -10,6 +10,7 @@ imSoHappyBtn.addEventListener("click", imSoHappy);
 multiplesOf4Btn.addEventListener("click", multiplesOf4);
 oddFrom55To11Btn.addEventListener("click", oddNumbersfrom55To11);
 sum5To50Btn.addEventListener("click", sum5To50);
+sum10To100Btn.addEventListener("click", sum10To100);
 
 function imSoHappy(){
     for(let i = 0; i < 500; i++){
@@ -30,9 +31,20 @@ function oddNumbersfrom55To11(){
 }
 
 function sum5To50(){
-    //console.log((50 - 5) * (5 + 50));
-    let total;
-    for(let i = 5; i < 50; i++){
 
+    let total = 0;
+    for(let i = 5; i <= 50; i++){
+        total += i;
     }
+
+    console.log(total);
+}
+
+function sum10To100(){
+    let total = 0;
+    for(let i = 10; i <= 100; i += 10){
+        total += i;
+    }
+
+    console.log(total);
 }
